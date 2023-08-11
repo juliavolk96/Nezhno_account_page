@@ -1,0 +1,102 @@
+/*
+Theme Name: IEE NNGU
+Autor: brantov
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+
+:root {
+  --white: #fff;
+  --black:#000;
+  --blue: #421DD8;
+  --link: #3F3176;
+
+  --main_1: #7264AA;
+  --main_2: #BFA4CE;
+  --main_3: #EFE1F0;
+  --main_4: #8D9ACE;
+  --main_5: #917286;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  scroll-behavior: smooth;
+  min-width: 320px;
+  overflow-x:hidden;
+}
+
+.container {
+  max-width: 1184px;
+  margin: 0 auto;
+  color: var(--black);
+}
+
+ul{
+  margin: 0;
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.none{
+  display: none;
+}
+
+.basic h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  text-transform: uppercase;
+  line-height: 120%;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1{font-size: 61px;}
+h2{font-size: 49px;}
+h3{font-size: 39px;}
+h4{font-size: 31px;}
+h5{font-size: 25px;}
+h6{font-size: 20px;}
+p{margin: 0;}
+.bold_txt{font-weight: 600;}
+.white_txt{color: var(--white);}
+.mt_100{margin-top: 100px;}
+.ta_center{text-align: center;}
+.grid_gap_2em{
+  display: grid;
+  grid-row-gap: 2em;
+}
+
+/* Buttons */
+
+.blue_btn {
+  background-color: #421DD8;
+  padding: 16px 32px;
+  border-radius: 15px;
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
