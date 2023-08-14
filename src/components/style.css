@@ -429,7 +429,13 @@
   opacity: 0;
 }
 
+
 @media screen and (max-width: 1000px) {
+  #account_input-age {
+    width: 100%; 
+    max-width: 120px;
+  }
+
   .account_sections-main {
     flex-direction: column;
     align-items: center;
