@@ -1,18 +1,7 @@
 import React, { useState } from 'react';
 
 const AccountComponent = () => {
-  // const [inputType, setInputType] = useState('text');
   const [selectedGender, setSelectedGender] = useState('');
-
-  // const handleDateFocus = () => {
-  //   setInputType('date');
-  // };
-
-  // const handleDateBlur = (e) => {
-  //   if (e.target.value === '') {
-  //     setInputType('text');
-  //   }
-  // };
 
   const handleGenderChange = (e) => {
     setSelectedGender(e.target.value);
@@ -72,8 +61,6 @@ const AccountComponent = () => {
                   max="2022-12-31"
                   required="required"
                   placeholder="ДД.ММ.ГГГГ"
-                  // onFocus={handleDateFocus}
-                  // onBlur={handleDateBlur}
                 />
                 <span className="text-error text-error_account_input-age">text error</span>
               </div>
