@@ -202,6 +202,13 @@
   }
 }
 
+.react-datepicker__header {
+  background-color: lightblue; 
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: rgb(75, 75, 76);
+}
 
 
 /*Account*/

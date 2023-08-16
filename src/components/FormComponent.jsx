@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
+import DatePickerComponent from './DatePickerComponent.jsx';
+import 'react-datepicker/dist/react-datepicker.css';
 
 function FormComponent() {
   const [selectedGender, setSelectedGender] = useState('');
 
   const handleGenderChange = (e) => {
     setSelectedGender(e.target.value);
+  };
+
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
   };
 
   return (
@@ -52,15 +60,15 @@ function FormComponent() {
           </div>
         </div>
         <div className="account_age-select">
-          <input
-            type="date"
-            id="account_input-age"
+          <DatePickerComponent
+            selectedDate={selectedDate}
+            handleDateChange={handleDateChange}
+            placeholderText="ДД.ММ.ГГГГ"
             className="account-input-custom"
+            id="account_input-age"
             name="account_input-age"
-            min="1900-01-01"
-            max="2022-12-31"
-            required="required"
-            placeholder="ДД.ММ.ГГГГ"
+            required
+            autoComplete="off"
           />
           <span className="text-error text-error_account_input-age">
             text error
@@ -72,7 +80,6 @@ function FormComponent() {
         className="account-input-custom"
         type="text"
         placeholder="Имя"
-        required="required"
         name="account_input-firstName"
       />
       <span className="text-error text-error_account_input-firstName">
