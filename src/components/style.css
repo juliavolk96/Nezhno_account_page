@@ -436,11 +436,21 @@
   opacity: 0;
 }
 
+#account_input-age::placeholder {
+  text-align: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  #account_input-age {
+    /* width: 100%;  */
+    min-width: 190px;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   #account_input-age {
     /* width: 100%;  */
-    min-width: 175px;
+    min-width: 190px;
   }
 
   #account_input-age::placeholder {
