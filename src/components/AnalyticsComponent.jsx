@@ -8,9 +8,6 @@ function AnalyticsComponent() {
         src="https://nezhno.space/wp-content/themes/my-theme/assets/images/sapiens.png"
         alt="Изображение"
       />
-      <div className="account_analytics_not-result-text">
-        Пока не готов результат
-      </div>
       <a href="/survey" className="blue_btn account_analytics_survey-link">
         Пройти опрос
       </a>
