@@ -210,6 +210,10 @@
   border-color: rgb(75, 75, 76);
 }
 
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::before, .react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle::after {
+    border-top: none;
+    border-bottom-color: lightblue;
+}
 
 /*Account*/
 /* .account_section {
